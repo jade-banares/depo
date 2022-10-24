@@ -1,6 +1,8 @@
 ```
-blog-post
+depo
 ├── README.md
+├── script
+    └── reveal.js
 ├── .vscode
     └── settings.json
 ├── css
