@@ -181,7 +181,6 @@ h6,
 strong {
   font-weight: bold;
 }
-
 h1 {
   font-size: 32px;
 }
@@ -293,7 +292,7 @@ img {
 
 body {
   background: #032e4e;
-  background-image: url(../images/bg.jpg);
+  background-image: url(../images/depo-bg.jpg);
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -325,16 +324,17 @@ body {
   margin: 0px 50px;
 }
 .benefits-area h1, .reg-area h1, .tnc-area h1, .faq-area h1 {
-    background: linear-gradient(to bottom,#ffeb3b 0%,#ffd613 40%,#de8f10 100%);
+    background: linear-gradient(to bottom,#ffeb3b 0%,#ffd613 40%,#ECCB5B 100%);
 }
 .header {
-  background-color: #02213f;
-  background: linear-gradient(circle 334px at 81.5% 54.2%,#3593ff 0,#001c36 90%);
-  background: rgb(4 34 66);
+  background-color: #161616;
+  background: linear-gradient(circle 534px at 81.5% 54.2%,#3593ff 0,#707070 90%);
+  z-index: 2;
    /* border-bottom: 1px solid #022742; */
   /* background: linear-gradient(to right,#011d37 0,#022f50 40%,#022f50 60%,#001c36 100%); */
-  background-image: url(../images/header-bg.png);
+  background-image: url(/images/header-bg.png);
   background-size: cover;
+  background-position: left;
 }
 
 .header h1 {
@@ -342,8 +342,7 @@ body {
     color: #f5bc13;
     font-weight: 800;
     margin: 0;
-    background: linear-gradient( 
-180deg, #ffe600 0%, #db6320 100%);
+    background: linear-gradient(180deg, #ffe600 0%, #db6320 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -433,6 +432,7 @@ body {
   box-shadow: 0 2px 45px -16px rgb(0 0 0 / 30%);
   margin-bottom: 30px;
   background: #fff;
+  background: hsl(0, 0%, 34%, 0.4);
   /* background-image: url(../images/bg.jpg);
   background-repeat: repeat; */
 }
@@ -450,19 +450,19 @@ body {
 
 .con-aff a:hover {
   transform: scale(1.25);
-  background-color: #f5bc13;
+  background-color: #f4be1d;
   /* background-image: linear-gradient(to left, #ffc107, #ffdc16); */
-  box-shadow: 2px 2px 48px -16px rgb(0 0 0 / 60%);
+  box-shadow: 2px 2px 48px -16px rgba(125, 125, 125, 0.6);
   border-color: transparent;
 }
 
 .con-aff a {
-  border-right:2px inset #29517c;
+  border-right:2px inset #d8d8d8;
   flex: 1;
   padding: 15px 0;
   transition: all 0.3s ease;
-  background: radial-gradient(circle 178px at 49.5% 54.2%,#3593ff 0,#001c36 90%);
-  border-bottom: 1px solid #022742;
+  background: hsl(0, 0%, 13%);
+
 }
 
 .con-aff a:last-child {
@@ -563,7 +563,7 @@ body {
 }
 
 .benefits tbody tr:nth-of-type(odd) {
-  background-color: #0c446b;
+  background-color: #6f7985;
 }
 
 /* End Benefits */
@@ -590,17 +590,17 @@ span.sec-title {
 }
 
 .register {
-  flex-basis: 25%;
+  flex-basis: 30%;
   flex-grow: 0;
   text-align: center;
   background: #001c36;
   border-radius: 10px;
-  border: 1px solid #2196f3;
-  background: radial-gradient(circle 178px at 50.5% 38.2%,#1288f5 0,#001c36 90%);
+  border: 3px solid hsl(0, 0%, 34%);
+  background: radial-gradient(circle 178px at 50.5% 38.2%,#1288f5 0,#f5bc13 90%);
 
   /* background-image: url(http://localhost/maha168afiliasi/images/card-bg-2.jpg);
   background-size: cover; */
-  background: radial-gradient(circle 193px at 50.5% 106.2%,#1288f5 0,#001c36 90%);
+  background: radial-gradient(circle 193px at 50.5% 106.2%,#c0c0c2 0,#373737 90%);
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
@@ -629,7 +629,7 @@ span.sec-title {
   border-radius: 50px;
   /* background: cornflowerblue; */
   background-color: #2a2a72;
-  background-image: -webkit-linear-gradient(169deg, #009ffd, #0353d0);
+  background-image: -webkit-linear-gradient(169deg, #a9a9ad, #616060);
   margin: -35px auto auto;
   width: 55%;
 }
@@ -677,7 +677,7 @@ p.reg-desc{
 .tnc-area > ol,
 .faq-area > ul,
 .aff-box {
-  background: #022f50;
+  background-image: linear-gradient(#4F5B66, #A7ADBA);
   border: 0px;
   border-radius: 20px;
   width: 90%;
@@ -696,10 +696,13 @@ p.reg-desc{
 .benefits-area h2 > p {
   text-align: center;
 }
-.benefits-area {
-  background-image: url(../images/bg.jpg);
+.benefits-area.box {
+  border-radius: 30px;
+  position: relative;
+  background-image: url(/images/vintage.webp);
   background-repeat: repeat;
   background-position: right;
+
 }
 
 .reg-area h2 {
@@ -743,9 +746,10 @@ p.reg-desc{
   background-repeat: repeat;
 }
 
-.faq-area {
+.faq-area.box {
+  position: relative;
   margin-bottom: 50px;
-  background-image: url(../images/bg.jpg);
+  background-image: url(/images/453172.jpg);
   background-repeat: repeat;
   background-position: left center;
 }
@@ -769,7 +773,7 @@ p.reg-desc{
 }
 
 .faq-area,
-tnc-area box {
+.tnc-area.box {
   padding-bottom: 4.688rem;
 }
 
@@ -783,10 +787,10 @@ tnc-area box {
 .blob {
   position: absolute;
   top: 0;
-  left: 0;
-  fill: #ffeb3b;
-  width: 25vmax;
-  z-index: -1;
+  right: 0;
+  fill: #f5e429;
+  width: 20vmax;
+  z-index: -2;
   animation: move 10s ease-in-out infinite;
   transform-origin: 50% 50%;
 }
@@ -796,10 +800,10 @@ tnc-area box {
     transform: scale(1) translate(10px, -30px);
   }
   38% {
-    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+    transform: scale(0.8, 1) translate(50vw, 30vh) rotate(160deg);
   }
   40% {
-    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+    transform: scale(0.8, 1) translate(50vw, 30vh) rotate(160deg);
   }
   78% {
     transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
@@ -818,11 +822,17 @@ tnc-area box {
 
 .reg-area.box {
   position: relative;
-  background-image: url(../images/bg.jpg);
   background-repeat: repeat;
-  background: rgba(4,34,66,.4);
+  background: hsl(0, 0%, 34%, 0.4);
+  background-position: center;
+  border: 3px solid hsl(0, 0%, 34%);
 }
 
+.reg-area  .register:hover {
+  border: 3px solid #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+}
 .shape {
   position: absolute;
   top: 0;
@@ -976,10 +986,10 @@ Accordion */
   cursor: pointer;
   padding: 10px 25px;
   border-bottom: none;
-  background: #022f50;
+
   position: relative;
   margin-top: 15px;
-  color: #ffe937;
+  color: #000;
   padding: 30px;
   border-radius: 15px;
   font-size: 22px;
@@ -987,7 +997,7 @@ Accordion */
 }
 
 .collapse-accordion label:hover {
-  color:#fff;
+  color: rgb(65, 65, 255);
 }
 
 .collapse-accordion label:after {
@@ -1037,8 +1047,7 @@ Accordion */
   height: 0;
   transform: scaleY(0);
   transition: transform 0.2s ease-out;
-  background: #022f50;
-  color: #fff;
+
   font-weight: 300;
   padding-top: 10px;
 }
@@ -1065,10 +1074,10 @@ Accordion */
 }
 
 .collapse-accordion input[type="checkBox"]:checked + label {
-  background: #022f50;
+  background: #fff;
 }
 .collapse-accordion input[type="radio"]:checked + label {
-  background:#022f50;
+  background:#fff;
 }
 
 .collapse-accordion input[type="checkbox"]:checked + label .collpaseText {
@@ -1091,7 +1100,7 @@ Accordion */
   display: none;
 }
 .collapse-accordion li {
-  background-color: #022f50;
+  background-color: #fff;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 20px;
@@ -1119,17 +1128,21 @@ Accordion */
 
 
 
-.tnc-area {
+.tnc-area.box {
+  position: relative;
   margin-top: 120px;
-  background-image: url(https://i.imgur.com/J1DGIzc.jpg);
+  background-image: url(/images/vintage.webp);
   background-size: cover;
+;
 }
 
 
-.faq-area {
+.faq-area.box {
+  position: relative;
   margin-bottom: 50px;
-  background-image: url(https://i.imgur.com/Yz7myiW.png);
+  background-image: url(/images/453172.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .tnc-area, .aff-area, .benefits-area{
@@ -1144,8 +1157,8 @@ Accordion */
   text-align: center;
   line-height: 100px;
   margin: 0 auto;
-  background-color: #0555a6;
-  box-shadow: 0px 13px 21px 0px rgb(236 174 17), inset 0px 0px 15px 5px #ffdc1d;
+  background-color: #f5bc13;
+  box-shadow: 0px 13px 21px 0px #ffd600, inset 0px 0px 15px 5px #fff023;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1181,10 +1194,10 @@ Accordion */
   width: 40px;
   height: 40px;
   background-image: -webkit-linear-gradient( 
--45deg, #2196f3 0%, #022f50 100%);
+-45deg, #9c9c9c 0%, #022f50 100%);
   background-image: -webkit-linear-gradient(
--45deg,  #2196f3 0%, #022f50  100%);
-  background-image: -ms-linear-gradient(-45deg, #2196f3 0%, #022f50  100%);
+-45deg,  #9c9c9c 0%, #022f50  100%);
+  background-image: -ms-linear-gradient(-45deg, #9c9c9c 0%, #022f50  100%);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1201,12 +1214,207 @@ Accordion */
   margin: 20px auto 35px;
 } 
 
+
+/* New added CSS*/
+
+ul.header-list{
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  list-style: none;
+  display: flex;
+}
+ul.header-list li {
+  padding-right: 10px;
+}
+ul.header-list li:after{
+  content:' \2714';
+  color: hsl(120, 100%, 52%);
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  color: #fff;
+}
+.area{
+  z-index: -1;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+
+  .reveal.active {
+    opacity: 1;
+  }
+
+  .active.fade-bottom {
+    animation: fade-bottom 0.5s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 0.5s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 0.5s ease-in;
+  }
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 /* End od Accordion */
 @media screen and (max-width: 992px) {
   .container {
     width: 100%;
   }
-  
+  .navigation p {
+    font-size: 16px;
+  }
 .header {
     background-size: contain;
     background-position: right;
@@ -1386,7 +1594,10 @@ Accordion */
   .reg-step img {
     width: 30px;
     margin: 15px auto 35px;
-}
+  }
+  .area{
+    display: none;
+  }
 }
 @media screen and (max-width: 375px) {
   p.reg-desc {
@@ -1484,10 +1695,7 @@ table.aff-table {
   .menu-icon {
     width: 40px;
   }
-  .con-aff a {
-    padding: 10px 0;
-    background: radial-gradient(circle 178px at 49.5% 54.2%,#3593ff 0,#001c36 38%);
-  }
+  
   .con-aff strong {
     padding: 10px 0;
   }
@@ -1801,6 +2009,9 @@ fieldset {
   .chat-icon {
     width: 25px;
   }
+  .area{
+    display: none;
+  }
 }
 @media (max-width: 425px) {
   .chat-img {
@@ -1815,7 +2026,9 @@ fieldset {
   .play-card__icon::after{
     content:none;
   }
-
+  .area{
+    display: none;
+  }
 
 }
 
