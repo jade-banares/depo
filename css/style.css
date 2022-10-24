@@ -291,7 +291,7 @@ img {
 /* Custom */
 
 body {
-  background: #032e4e;
+  background: #222222;
   background-image: url(../images/depo-bg.jpg);
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
@@ -702,7 +702,14 @@ p.reg-desc{
   background-image: url(/images/vintage.webp);
   background-repeat: repeat;
   background-position: right;
+}
 
+.aff-area.box{
+  border-radius: 30px;
+  position: relative;
+  background-image: url(/images/vintage.webp);
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .reg-area h2 {
